@@ -1,0 +1,93 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(20, 95, 70);
+    color: rgb(241, 240, 240);
+    padding: 0 33.33% 22.22% 33.33%;
+}
+
+.titleContainer {
+    font-weight: bold;
+    text-align: center;
+}
+
+.textEntryField{
+    background-color: rgb(241, 240, 240);
+    color: rgb(20,20,20);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.listContainer{
+    border-style: dotted;
+    border-color: rgb(241, 240, 240);
+    color: rgb(241, 240, 240);
+    border-radius: 20px;
+    padding: 175px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#instructionList{
+    text-align: left;
+}
+
+#reset-button {
+    padding: 10px;
+    background: rgb(231, 240, 240);
+    color:rgb(20,20,20);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+#save-button {
+    padding: 10px;
+    background: rgb(13, 107, 79);
+    color:rgb(241, 240, 240);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+.add-button{
+    padding: 5px;
+    background: rgb(231, 240, 240);
+    color:rgb(20,20,20);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 0px;
+}
+
+div input {
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+/* Flex help from that SO, link it */
+
+#ingredientList div {
+    background-color: rgb(30, 160, 160);
+    border-color: rgb(231, 240, 240);
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 20px;
+    margin: 10px;
+    /* min-width: 100px; */
+    padding: 10px;
+}
+
+#instructionList div {
+    background-color: rgb(30, 160, 160);
+    border-color: rgb(231, 240, 240);
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 10px;
+    /* min-width: 100px; */
+    padding: 10px;
+}

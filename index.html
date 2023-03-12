@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tanner Howell's Recipe Card Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="assn4.js" defer></script>
+    <script src="writeRecipeToFile.js" defer></script>
+</head>
+<body>
+
+    <!--Website title here-->
+    <div class="titleContainer">
+        <h1>
+            World Recipeace Recipe Builder!
+        </h1>
+    </div>
+
+            <!--Recipe title here-->
+            <div class="textEntryField">
+                <input id="recipeTitle" type="text" placeholder="Enter a Title here"/>
+                <br>
+            </div>
+
+            <!--Ingredient input here-->
+            <div class="textEntryField">
+                <input id="ingredientInput" type="text" placeholder="List each ingredient here"/>
+                <button class="add-button" id="addIngredientButton">Add</button>
+                <br>
+            </div>
+
+            <!--List of Ingredients Container-->
+            <div class="listContainer" id="ingredientList">
+                    <strong>Ingredients will appear here... </strong>
+            </div>
+
+            <!--Instruction input here-->
+            <div class="textEntryField">
+                <input id="instructionInput" type="text" placeholder="List each instruction here"/>
+                <button class="add-button" id="addInstructionButton">Add</button>
+                <br>
+            </div>
+
+            <!--List of Instructions Container-->
+            <div class="listContainer" id="instructionList">
+                  <strong>Instructions will appear here...</strong>
+            </div>
+
+            <!--Reset and Save buttons-->
+            <div class="button-container">
+                <button id="reset-button">Reset</button>
+                <button id="save-button">Save Recipe Card</button>
+            </div>      
+ 
+
+</body>
+</html>

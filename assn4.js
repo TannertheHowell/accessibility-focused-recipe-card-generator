@@ -7,6 +7,7 @@ const instructionInput = document.getElementById("instructionInput");
 const instructionList = document.getElementById("instructionList");
 
 const saveButton = document.getElementById("save-button");
+const resetButton = document.getElementById("reset-button");
 
 // Making my recipe object
 let recipe = {
@@ -127,6 +128,11 @@ function recipeCompile() {
     console.log(recipe);
 }
 
+function pageReset() {
+    window.location.reload();
+}
+
 addInstructionButton.addEventListener("click", addInstruction);
 addIngredientButton.addEventListener("click", addIngredient);
 saveButton.addEventListener("click", recipeCompile);
+resetButton.addEventListener("click", pageReset);

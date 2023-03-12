@@ -8,12 +8,11 @@
     <script src="writeRecipeToFile.js" defer></script>
 </head>
 <body>
-
     <!--Website title here-->
     <div class="titleContainer">
-        <h1>
+        <h2>
             World Recipeace Recipe Builder!
-        </h1>
+        </h2>
     </div>
 
             <!--Recipe title here-->
@@ -22,10 +21,11 @@
                 <br>
             </div>
 
+    <div>
             <!--Ingredient input here-->
             <div class="textEntryField">
                 <input id="ingredientInput" type="text" placeholder="List each ingredient here"/>
-                <button class="add-button" id="addIngredientButton">Add</button>
+                <button class="add-button" id="addIngredientButton">Add Ingredient</button>
                 <br>
             </div>
 
@@ -33,11 +33,13 @@
             <div class="listContainer" id="ingredientList">
                     <strong>Ingredients will appear here... </strong>
             </div>
+    </div>
 
+    <div>
             <!--Instruction input here-->
             <div class="textEntryField">
                 <input id="instructionInput" type="text" placeholder="List each instruction here"/>
-                <button class="add-button" id="addInstructionButton">Add</button>
+                <button class="add-button" id="addInstructionButton">Add Instruction</button>
                 <br>
             </div>
 
@@ -45,7 +47,7 @@
             <div class="listContainer" id="instructionList">
                   <strong>Instructions will appear here...</strong>
             </div>
-
+    </div>
             <!--Reset and Save buttons-->
             <div class="button-container">
                 <button id="reset-button">Reset</button>

@@ -30,7 +30,7 @@ function addIngredient(){
 
 function removeIngredient(e){
     // Getting the index for the ingredient to be removed 
-    const index = parseInt(e.target.getAttribute("element-index"));
+    const index = parseInt(e.target.getAttribute("tabindex"));
 
     // Cutting out the deleted ingredient 
     recipe.ingredients.splice(index, 1);
@@ -46,14 +46,14 @@ function showIngredients(){
     // Add each of the ingredients to the list
     recipe.ingredients.forEach((ingredient, index) => {
 
-    // Making the new elements and including the ingredients in the element
-    const ingredientElement = document.createElement("div");
-    ingredientElement.textContent = ingredient;
-    ingredientElement.setAttribute("element-index", index);
-    ingredientElement.addEventListener("click", removeIngredient);
+        // Making the new elements and including the ingredients in the element
+        const ingredientElement = document.createElement("div");
+        ingredientElement.textContent = ingredient;
+        ingredientElement.setAttribute("tabindex", index);
+        ingredientElement.addEventListener("click", removeIngredient);
 
-    // Adding the ingredient element to the ingredient list 
-    ingredientList.appendChild(ingredientElement);
+        // Adding the ingredient element to the ingredient list 
+        ingredientList.appendChild(ingredientElement);
     });
 }
 
@@ -71,7 +71,7 @@ function addInstruction(){
 
 function removeInstruction(e){
     // Getting the index for the instruction to be removed 
-    const index = parseInt(e.target.getAttribute("element-index"));
+    const index = parseInt(e.target.getAttribute("tabindex"));
 
     // Cutting out the deleted instruction 
     recipe.instructions.splice(index, 1);

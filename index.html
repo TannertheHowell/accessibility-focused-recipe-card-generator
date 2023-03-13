@@ -25,12 +25,12 @@
             <!--Ingredient input here-->
             <div class="textEntryField">
                 <input id="ingredientInput" type="text" placeholder="List each ingredient here"/>
-                <button class="add-button" id="addIngredientButton">Add Ingredient</button>
+                <button class="add-button" id="addIngredientButton" aria-label="Add Ingredient">Add Ingredient</button>
                 <br>
             </div>
 
             <!--List of Ingredients Container-->
-            <div class="listContainer" id="ingredientList">
+            <div class="listContainer" id="ingredientList" aria-live="polite" aria-label="List of instructions">
                     <strong>Ingredients will appear here... </strong>
             </div>
     </div>
@@ -39,19 +39,19 @@
             <!--Instruction input here-->
             <div class="textEntryField">
                 <input id="instructionInput" type="text" placeholder="List each instruction here"/>
-                <button class="add-button" id="addInstructionButton">Add Instruction</button>
+                <button class="add-button" id="addInstructionButton" aria-label="Add Instruction">Add Instruction</button>
                 <br>
             </div>
 
             <!--List of Instructions Container-->
-            <div class="listContainer" id="instructionList">
+            <div class="listContainer" id="instructionList" aria-live="polite" aria-label="List of instructions">
                   <strong>Instructions will appear here...</strong>
             </div>
     </div>
             <!--Reset and Save buttons-->
             <div class="button-container">
-                <button id="reset-button">Reset</button>
-                <button id="save-button">Save Recipe Card</button>
+                <button id="reset-button" aria-label="Reset">Reset</button>
+                <button id="save-button" aria-label="Save Recipe">Save Recipe Card</button>
             </div>      
  
 

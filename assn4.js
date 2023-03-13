@@ -136,3 +136,15 @@ addInstructionButton.addEventListener("click", addInstruction);
 addIngredientButton.addEventListener("click", addIngredient);
 saveButton.addEventListener("click", recipeCompile);
 resetButton.addEventListener("click", pageReset);
+
+ingredientInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      addIngredientButton.click();
+    }
+  });
+
+  instructionInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      addInstructionButton.click();
+    }
+  });
